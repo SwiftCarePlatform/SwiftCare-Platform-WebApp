@@ -13,7 +13,7 @@ const Navbar = () => {
               viewBox="0 0 32 33"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="logo-icon"
+              className="logo-iconn"
             >
               <rect y="0.5" width="32" height="32" rx="4" fill="#208E90"></rect>
               <path
