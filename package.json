@@ -5,8 +5,10 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "export": "next export",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "gh-deploy": "npm run build && npm run export"
   },
   "dependencies": {
     "framer-motion": "^12.23.12",
@@ -18,10 +20,10 @@
     "react-toastify": "^11.0.5"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3",
-    "@tailwindcss/postcss": "^4",
-    "eslint": "^9",
+    "@eslint/eslintrc": "^3.0.0",
+    "@tailwindcss/postcss": "^4.0.0",
+    "eslint": "^9.0.0",
     "eslint-config-next": "15.4.7",
-    "tailwindcss": "^4"
+    "tailwindcss": "^4.0.0"
   }
 }
