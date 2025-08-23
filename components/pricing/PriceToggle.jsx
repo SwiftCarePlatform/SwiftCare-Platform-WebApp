@@ -1,4 +1,4 @@
-import "./Toggle.css";
+import "./ToggleSection.css";
 
 const PriceToggle = ({ activeOption, onToggle }) => {
   return (

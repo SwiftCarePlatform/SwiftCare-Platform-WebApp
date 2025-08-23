@@ -1,7 +1,6 @@
 {
   "name": "my-swiftcare",
   "version": "0.1.0",
-  "homepage": "https://SwiftCare-Platform.github.io/SwiftCare-Platform-WebApp",
   "private": true,
  "scripts": {
   "dev": "next dev",

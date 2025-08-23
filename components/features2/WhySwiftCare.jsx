@@ -1,4 +1,4 @@
-import "./WhySwiftCare.css";
+import "./WhySection.css";
 import { PiSwatches } from "react-icons/pi";
 import { PiHandHeartLight } from "react-icons/pi";
 import { PiFirstAid } from "react-icons/pi";

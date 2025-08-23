@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { FeatureList } from "./FeatureList";
-import "./ServiceCard.css";
+import "./ServiceSection.css";
 
 export const ServiceCard = ({
   headerImage,

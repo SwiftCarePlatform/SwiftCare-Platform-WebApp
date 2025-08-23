@@ -1,6 +1,6 @@
 import React from "react";
 import { BsCheckCircle } from "react-icons/bs"; 
-import "./FeatureList.css"; 
+import "./FeatureSection.css"; 
 
 export const FeatureList = ({ title, features }) => {
   return (

@@ -1,5 +1,5 @@
 import { FaChevronRight } from "react-icons/fa";
-import "./HealthCare.css";
+import "./HealthSection.css";
 import JoinUsImage from '@/public/JoinUs.png';
 import Image from "next/image";
 

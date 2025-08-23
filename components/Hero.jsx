@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import "../css/Hero.css";
+import "../css/HeroSection.css";
 import HeroImage1 from "@/public/Hero Image 1.png";
 import HeroImage2 from "@/public/Hero Image 2.png";
 import HeroImage3 from "@/public/Hero Image 3.png";

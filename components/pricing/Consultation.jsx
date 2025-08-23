@@ -3,7 +3,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import PriceToggle from "./PriceToggle";
 import { ServiceCard } from "./ServiceCard";
-import "./Consultation.css";
+import "./ConsultationSection.css";
 
 export const ConsultationPackages = () => {
   const [pricingMode, setPricingMode] = useState("session");
