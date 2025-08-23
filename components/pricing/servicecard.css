@@ -1,0 +1,97 @@
+.service-card {
+  flex: 1 1 300px;
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  will-change: transform, box-shadow;
+}
+
+.service-card:hover {
+ transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.service-card-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 8px; 
+}
+
+.service-card-content {
+  padding: 1.5rem;
+}
+
+.service-card-title {
+  font-weight: 600;
+  font-size: 1rem;
+  text-align: center;
+  color: #27272a;
+}
+
+.service-card-price {
+  margin-top: 1rem;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #27272a;
+  text-align: start;
+}
+
+.service-card-divider {
+  margin-top: 1rem;
+  height: 1px;
+  width: 100%;
+  border: none;
+}
+
+.divider-line {
+  background-color: #d9f99d;
+}
+
+.divider-cyan {
+  background-color: #67e8f9;
+}
+
+.service-card-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+  padding: 0.75rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  border: none;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.button-line {
+  background-color: #696917;
+}
+.button-line:hover {
+  background-color: #a9a95c;
+}
+
+.button-cyan {
+  background-color: #174169;
+}
+.button-cyan:hover {
+  background-color:  #2b5b88;
+}
+
+.button-line-dark {
+  background-color: #416917;
+}
+.button-line-dark:hover {
+  background-color: #61853b;
+}
+
+

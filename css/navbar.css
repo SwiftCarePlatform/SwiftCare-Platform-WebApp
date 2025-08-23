@@ -1,0 +1,92 @@
+/* lOGO */
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .logo-icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .logo-icon {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .header-text {
+    font-size: 16px;
+    font-weight: 700;
+    color: #208E90;
+    line-height: 1.5;
+  
+  }
+
+  .logo-link{
+    text-decoration: none;
+  }
+  /* NAVBAR */
+  .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 2rem;
+  background-color: rgba(255, 255, 255, 0.6); 
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.04);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.ul-list {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+  align-items: center;
+  margin-right: -1rem;
+}
+
+ .nav-link {
+    font-size: 0.875rem; 
+    line-height: 1.5rem; 
+    color: #6C6C6C; 
+    text-decoration: none;
+    padding-bottom: 4px;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.3s;
+  }
+  
+  /* BUTTONS */
+
+   .handle-signin{
+    padding: 0.625rem 1rem; 
+    font-size: 0.875rem; 
+    font-weight: 500; 
+    color: #14b8a6;
+    border-radius: 10px; 
+    border: 1px solid #D5EAEA;
+    width: 106px;
+    cursor: pointer;
+  }
+  
+
+  .handle-register {
+    padding: 0.625rem 1rem; 
+    font-size: 0.875rem; 
+    font-weight: 500; 
+    color: #ffffff;
+    background-color: #208E90; 
+    border-radius: 10px; 
+    width: 106px; 
+    border: none;
+    cursor: pointer;
+  }

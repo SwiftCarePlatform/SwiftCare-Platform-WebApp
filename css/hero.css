@@ -1,0 +1,147 @@
+/* HERO SECTION */
+
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 3rem; 
+  padding-right: 0rem; 
+  height: 661px;
+  position: relative;
+  max-width: 100%; 
+  overflow: hidden;
+  padding-top: 6.8rem; 
+  height: calc(100vh - 6.8rem)
+}
+
+
+.hero-content {
+  padding-top: 13rem;
+  width: 596px;
+  margin-left: -1.5rem;
+
+}
+
+.hero-heading {
+  margin-bottom: 1.5rem; 
+  font-size: 2rem; 
+  font-weight: bold;
+  color: #000000;
+  pointer-events: none;
+
+}
+
+.hero-description {
+  margin-bottom: 1.5rem; 
+  font-size: 1rem; 
+  color: #4B5563; 
+  pointer-events: none;
+}
+
+  .cta-button {
+    padding: 0.625rem 1rem; 
+    font-size: 0.875rem;
+    font-weight: 500; 
+    color: white;
+    background-color: #208E90; 
+    border-radius: 10px; 
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .cta-button:hover {
+    background-color: #008d89;
+  }
+
+  /* Underline style */
+
+  .underline-style {
+  position: relative;
+  color: #208E90;
+  display: inline-block;
+}
+
+.underline-style::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0; 
+  width: 100%;
+  height: 10px; 
+  background-image: url('/line2.png');
+  background-repeat: no-repeat;
+  background-size: contain; 
+  pointer-events: none;
+}
+
+
+  /* HERO IMAGE */
+
+  .hero-image-wrapper {
+  position: relative;
+  padding: 0;
+  height: 668px;
+  width: 710px;
+  overflow: hidden;
+
+}
+
+.hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  
+  transition: transform 1s ease-in-out;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: '30px';
+
+}
+
+.hero-image-wrapper .hero-image:nth-child(1) {
+  transform: translateX(0);
+}
+.hero-image-wrapper .hero-image:nth-child(2) {
+  transform: translateX(100%);
+}
+.hero-image-wrapper .hero-image:nth-child(3) {
+  transform: translateX(200%);
+}
+
+
+
+  .caption {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1.5rem;
+    color: #ffffff;
+    font-size: 1.2rem;
+    z-index: 2;
+  }
+
+  
+   .slider {
+    display: flex;
+    gap: 0.5rem;
+    position: absolute;
+    bottom: 4px;
+    left: 1px;
+    z-index: 2;
+  }
+  
+  .dot {
+    width: 30px;
+    height: 6px;
+    background-color: #D9D9D980;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .dot.active {
+    background-color: #208E90;
+  }
+

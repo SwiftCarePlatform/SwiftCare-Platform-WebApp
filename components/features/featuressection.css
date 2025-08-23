@@ -1,0 +1,51 @@
+.features-section {
+  padding: 3rem 7rem;
+  background: linear-gradient(to left, #208e90, #09292a);
+}
+
+.gradient {
+  background: linear-gradient(to bottom, #208e90, #09292a);
+}
+
+.features-wrapper {
+  margin: 0 auto;
+  max-width: 1202px;
+}
+
+.features-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 2rem;
+    pointer-events: none;
+}
+
+.feature-icon {
+  font-size: 1.5rem;
+  color: #208E90;
+  text-align: center;
+  padding: 2px;
+}
+
+.feature-row {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+
+/* @media (max-width: 768px) {
+  .feature-row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.feature-icon {
+  font-size: 1.5rem;
+  color: #208e90;
+  text-align: center;
+} */
+

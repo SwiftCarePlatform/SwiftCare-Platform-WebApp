@@ -1,0 +1,36 @@
+.feature-list {
+  margin-top: 1.5rem;
+  font-weight: 500;
+  color: #27272a;
+}
+
+.feature-list-title {
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+.feature-list-items {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  font-size: 0.9rem;
+}
+
+.feature-list-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.circle-icon{
+  color: black;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.feature-text {
+  color: #27272a;
+  flex-grow: 1;
+}

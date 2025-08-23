@@ -1,0 +1,22 @@
+.consultation-packages {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1.5rem;
+  background-color: #f9fafb;
+  cursor: pointer;
+}
+
+.consultation-header {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  color: #27272a;
+  margin-bottom: 2.5rem;
+}
+
+.service-cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
