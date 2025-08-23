@@ -1,7 +1,7 @@
 import SectionHeader from "./SectionHeader";
 import FeatureCard from "./FeatureCard";
 import ExploreButton from "./ExploreButton";
-import "./featuressection.css";
+import "./FeatureSection.css";
 import { FaPhone, FaBrain, FaUsers, FaLock } from "react-icons/fa6";
 import { IoVideocam } from "react-icons/io5";
 

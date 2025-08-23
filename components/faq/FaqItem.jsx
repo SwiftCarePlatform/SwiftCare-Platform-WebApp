@@ -1,6 +1,6 @@
 import { GoPlusCircle } from "react-icons/go";
 import { PiMinusCircle } from "react-icons/pi";
-import "./faqitem.css";
+import "./FaqItem.css";
 
 const FaqItem = ({ question, answer, isOpen, onToggle }) => {
   return (

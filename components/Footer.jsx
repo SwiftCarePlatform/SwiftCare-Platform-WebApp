@@ -5,7 +5,7 @@ import { FaLinkedinIn, FaFacebookF, FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import Section from "./framer/FramerMotion";
 import { motion } from "framer-motion";
-import "@/css/footer.css";
+import "@/css/Footer.css";
 
 const Footer = () => {
 

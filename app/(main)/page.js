@@ -1,10 +1,10 @@
 "use client";
 
 import Faq from "@/components/faq/Faq";
-import FeaturesSection from "@/components/features/FeaturesSection";
+import FeaturesSection from "@/components/features/FeatureSection";
 import WhySwiftCare from "@/components/features2/WhySwiftCare";
 import Hero from "@/components/Hero";
-import HowSwiftcareWorks from "@/components/hero-1/HowSwiftcareWorks";
+import HowSwiftcareWorks from "@/components/hero1/HowSwiftcareWorks";
 import HealthcareProfessionalSection from "@/components/joinus/HealthCare";
 import ConsultationPackages from "@/components/pricing/Consultation";
 import Section from "@/components/framer/FramerMotion";

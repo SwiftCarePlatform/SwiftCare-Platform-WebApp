@@ -1,5 +1,5 @@
 import ProcessStep from "./ProcessStep";
-import "./howSwiftcareWorks.css";
+import "./SwiftCareWorks.css";
 
 const HowSwiftcareWorks = () => {
   const processSteps = [

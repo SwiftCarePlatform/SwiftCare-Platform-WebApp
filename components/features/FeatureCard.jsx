@@ -1,4 +1,4 @@
-import "./featurecard.css"; 
+import "./FeatureCard.css"; 
 
 
 function FeatureCard({ icon, title, description }) {

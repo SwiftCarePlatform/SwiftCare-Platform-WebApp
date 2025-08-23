@@ -1,4 +1,4 @@
-import "./explorebutton.css";
+import "./ExploreButton.css";
 
 function ExploreButton() {
   return (

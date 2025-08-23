@@ -1,4 +1,4 @@
-import "./sectionheader.css"; 
+import "./SectionHeader.css"; 
 
 function SectionHeader({ title, description }) {
   return (

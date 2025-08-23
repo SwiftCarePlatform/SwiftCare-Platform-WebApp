@@ -1,4 +1,4 @@
-import "./process.css"; 
+import "./ProcessStep.css"; 
 
 
 const ProcessStep = ({ title, description }) => {
