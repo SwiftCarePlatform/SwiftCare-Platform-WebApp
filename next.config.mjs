@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-      output: 'export',             // Required for static export
-  basePath: '/SwiftCare-Platform-WebApp',
+      output: 'export',
+     basePath: '/SwiftCare-Platform-WebApp',
+     assetPrefix: '/SwiftCare-Platform-WebApp/'
 };
 
 export default nextConfig;
