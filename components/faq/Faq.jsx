@@ -1,8 +1,7 @@
 'use client'
 import { useState } from "react";
 import FaqItem from "./FaqItem";
-import "./Faq.css";
-
+import "../faq/FaqWork.css"
 const Faq = () => {
 
   const faqItems = [

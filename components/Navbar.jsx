@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import "@/css/Navbar.css";
+import "../css/Navbar.css";
 const Navbar = () => {
   return (
     <nav className="navbar">
