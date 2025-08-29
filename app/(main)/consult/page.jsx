@@ -1,7 +1,7 @@
 "use client";
 import RecommendedSection from "./recommended";
 import TopRatedSection from "./toprated";
-import styles from "./ConsultPage.module.css";
+import styles from "./consultPage.module.css";
 import { useState } from "react";
 import Section from "@/components/framer/FramerMotion";
 
