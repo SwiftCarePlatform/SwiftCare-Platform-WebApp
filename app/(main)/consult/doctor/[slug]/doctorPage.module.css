@@ -1,0 +1,320 @@
+.container {
+  max-width: 600px !important;
+  margin: 0 auto !important;
+  padding: 20px;
+  background: #f5f5f5;
+  min-height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.header {
+  text-align: center;
+  position: relative;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  margin-top: 95px;
+}
+
+.profileImage {
+  display: block;
+  margin: 0 auto 15px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.backBtn {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  background: #f0f0f0;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #333;
+}
+
+.backBtn:hover {
+  background: #e0e0e0;
+}
+
+.header h2 {
+  margin: 0 0 8px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.specialty {
+  font-weight: 500;
+  color: #555;
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
+.location {
+  color: #777;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  align-items: center;
+  margin: 0;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background: #e3f2fd;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  text-align: center;
+  gap: 10px;
+}
+
+.stats > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stats h3 {
+  margin: 0 0 5px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.stats p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.about {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.about h4 {
+  margin: 0 0 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.about p {
+  margin: 0;
+  line-height: 1.5;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.appointment {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: left;
+}
+
+.appointment h4 {
+  margin: 0 0 15px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.dateContainer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 8px;
+  margin-bottom: 25px;
+}
+
+.dateContainer button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px 8px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background: #f8f8f8;
+  cursor: pointer;
+  font-size: 0.85rem;
+  color: #666;
+  transition: all 0.2s ease;
+}
+
+.dateContainer button span:first-child {
+  font-size: 0.75rem;
+  margin-bottom: 2px;
+}
+
+.dateContainer button span:last-child {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.activeDate {
+  background: #4a9b8e !important;
+  color: white !important;
+  border-color: #4a9b8e !important;
+}
+
+.activeDate span {
+  color: white !important;
+}
+
+.timeContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin-bottom: 25px;
+}
+
+.timeContainer button {
+  padding: 12px 8px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background: #f8f8f8;
+  cursor: pointer;
+  font-size: 0.85rem;
+  color: #666;
+  transition: all 0.2s ease;
+}
+
+.timeContainer button:hover {
+  background: #f0f0f0;
+}
+
+.activeTime {
+  background: #4a9b8e !important;
+  color: white !important;
+  border-color: #4a9b8e !important;
+}
+
+.bookBtn {
+  width: 100%;
+  padding: 15px;
+  background: #4a9b8e;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.bookBtn:hover {
+  background: #3d8275;
+}
+
+@media (max-width: 786px) {
+
+  .container {
+    padding: 16px;
+  }
+
+  .header {
+    margin-top: 97px;
+    padding: 16px;
+  }
+
+  .header h2 {
+    font-size: 1.3rem;
+  }
+
+  .specialty {
+    font-size: 0.95rem;
+  }
+
+  .location {
+    font-size: 0.85rem;
+    gap: 3px;
+  }
+
+  .profileImage {
+    width: 100px;
+    height: 100px;
+  }
+
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 16px;
+    gap: 8px;
+  }
+
+  .stats h3 {
+    font-size: 1rem;
+  }
+
+  .stats p {
+    font-size: 0.8rem;
+  }
+
+  .about,
+  .appointment {
+    padding: 16px;
+  }
+
+  .about h4,
+  .appointment h4 {
+    font-size: 0.95rem;
+  }
+
+  .about p {
+    font-size: 0.85rem;
+  }
+
+  .dateContainer {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+    margin-bottom: 20px;
+  }
+
+  .dateContainer button {
+    padding: 10px 6px;
+    font-size: 0.8rem;
+  }
+
+  .dateContainer button span:first-child {
+    font-size: 0.7rem;
+  }
+
+  .dateContainer button span:last-child {
+    font-size: 0.9rem;
+  }
+
+  .timeContainer {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px;
+    margin-bottom: 20px;
+  }
+
+  .timeContainer button {
+    padding: 10px 6px;
+    font-size: 0.8rem;
+  }
+
+  .bookBtn {
+    padding: 12px;
+    font-size: 0.95rem;
+  }
+
+  .backBtn {
+    left: 16px;
+    top: 16px;
+    padding: 8px;
+    font-size: 1rem;
+  }
+}

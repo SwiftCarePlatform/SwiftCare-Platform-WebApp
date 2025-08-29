@@ -1,0 +1,25 @@
+.wrapper {
+  background: #edf8ff;
+  display: grid;
+  justify-items: center;
+  align-items: start;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.container {
+  background: #fdfdfd;
+  max-width: 1728px;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 100px;
+}
+
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding-bottom: 60px;
+  }
+}

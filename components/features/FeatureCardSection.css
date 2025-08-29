@@ -1,16 +1,14 @@
 .feature-card {
-    padding: 0.625rem; 
-    background-color: #115e59; 
-    border-radius: 0.75rem; 
-    border: 1px solid #0e7490; 
-    width: 286px;
-    box-sizing: border-box;
-  }
+  flex: 1; 
+  max-width: 286px; 
+  min-width: 220px; 
+  padding: 0.625rem;
+  background-color: #115e59;
+  border-radius: 0.75rem;
+  box-sizing: border-box;
+}
 
-  .feature-card:last-child{
-    margin-left: auto;
-    margin-right: auto;
-  }
+
 
   
   .feature-icon-wrapper {

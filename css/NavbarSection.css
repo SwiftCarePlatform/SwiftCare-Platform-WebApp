@@ -67,6 +67,7 @@
   
   /* BUTTONS */
 
+
    .handle-signin{
     padding: 0.625rem 1rem; 
     font-size: 0.875rem; 
@@ -89,4 +90,129 @@
     width: 106px; 
     border: none;
     cursor: pointer;
+    margin-left: 7px;
   }
+
+  
+
+/* MOBILE MENU */
+.mobile-menu-icon {
+  display: none;
+  cursor: pointer;
+  color: #208E90;
+  z-index: 1100;
+}
+
+@media (max-width: 768px) {
+   .ul-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    position: absolute;
+    top: 70px; 
+    left: 0;
+    right: 0;
+    background-color: rgba(32, 142, 144, 0.99
+    );
+     backdrop-filter: blur(25px);                
+    -webkit-backdrop-filter: blur(25px);
+    padding: 0 1.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+    z-index: 1000;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.4s ease, opacity 0.3s ease, padding 0.3s ease;
+  }
+
+  /* open state */
+  .ul-list.active {
+    max-height: 400px; 
+    opacity: 1;
+    padding: 2rem 1.5rem;
+  }
+
+  /* close state  */
+  .ul-list.closing {
+    max-height: 0;
+    opacity: 0;
+    padding: 0 1.5rem;
+  }
+
+  /* stagger animation for children */
+  .ul-list.active li,
+  .ul-list.active .auth-buttons button {
+    opacity: 0;
+    transform: translateY(-10px);
+    animation: fadeInUp 0.4s forwards;
+  }
+
+  /* delays for stagger effect */
+  .ul-list.active li:nth-child(1) { animation-delay: 0.1s; }
+  .ul-list.active li:nth-child(2) { animation-delay: 0.2s; }
+  .ul-list.active li:nth-child(3) { animation-delay: 0.3s; }
+  .ul-list.active li:nth-child(4) { animation-delay: 0.4s; }
+
+  .ul-list.active .auth-buttons button:nth-child(1) { animation-delay: 0.5s; }
+  .ul-list.active .auth-buttons button:nth-child(2) { animation-delay: 0.6s; }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .auth-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-top: 0.8rem;
+  }
+  .handle-register{
+    margin-right: 5px;
+  }
+  .handle-signin{
+    margin-left: 6px;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+  }
+
+  .menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 900; 
+  }
+
+  .menu-overlay.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .ul-list.active {
+    z-index: 1000;
+    position: fixed;
+    right: 0;
+    top: 0;
+  }
+  .nav-link{
+        color: #ffffff;
+  }
+  .mobile-menu-icon .fa-times {
+  color:  #ffffff;
+}
+
+}

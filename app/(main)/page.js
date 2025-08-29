@@ -8,18 +8,17 @@ import HowSwiftcareWorks from "@/components/hero1/HowSwiftcareWorks";
 import HealthcareProfessionalSection from "@/components/joinus/HealthCare";
 import ConsultationPackages from "@/components/pricing/Consultation";
 import Section from "@/components/framer/FramerMotion";
-import { motion } from "framer-motion";
 
 const Homepage = () => {
   return (
     <>
-      <motion.div
+      <Section
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.2, ease: [0.25, 0.8, 0.25, 1] }}
       >
         <Hero />
-      </motion.div>
+      </Section>
 
       <Section
         initial={{ opacity: 0, x: -100 }}

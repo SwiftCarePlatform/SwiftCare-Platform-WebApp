@@ -1,0 +1,169 @@
+.container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f0f4ff 0%, #e8f2ff 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+
+}
+
+.content {
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+.iconContainer {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.iconCircle {
+  width: 120px;
+  height: 120px;
+  background: radial-gradient(circle, #4ade80 40%, #22c55e 70%, #16a34a 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow:
+    0 0 0 20px rgba(34, 197, 94, 0.1),
+    0 0 0 40px rgba(34, 197, 94, 0.05),
+    0 0 0 60px rgba(34, 197, 94, 0.03);
+  position: relative;
+}
+
+.checkIcon {
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0 0 15px 0;
+}
+
+.message {
+  font-size: 16px;
+  color: #6b7280;
+  line-height: 1.5;
+  margin: 0 0 40px 0;
+}
+
+.backButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  border: none;
+  color: #4a9b8e;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 8px 0;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.arrowIcon {
+  font-size: 14px;
+}
+
+/* Spinner */
+
+.loadingWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; 
+  background-color: #f9f9f9;
+}
+
+.spinner {
+  width: 60px;
+  height: 60px;
+  border: 6px solid #ddd;
+  border-top-color: #4a9b8e; 
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 16px;
+}
+
+.text {
+  font-size: 16px;
+  color: #333;
+  font-weight: 500;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 786px) {
+
+  .container {
+    padding: 16px;
+    min-height: auto; 
+  }
+
+  .content {
+    max-width: 100%;
+    margin-top: 8rem;
+  }
+
+  .iconContainer {
+    margin-bottom: 20px;
+  }
+
+  .iconCircle {
+    width: 90px;
+    height: 90px;
+    box-shadow:
+      0 0 0 15px rgba(34, 197, 94, 0.1),
+      0 0 0 30px rgba(34, 197, 94, 0.05),
+      0 0 0 45px rgba(34, 197, 94, 0.03);
+  }
+
+  .checkIcon {
+    font-size: 28px;
+  }
+
+  .title {
+    font-size: 22px;
+    margin-bottom: 12px;
+  }
+
+  .message {
+    font-size: 11.2px;
+    margin-bottom: 30px;
+  }
+
+  .backButton {
+    font-size: 14px;
+    gap: 6px;
+    padding: 6px 0;
+  }
+
+  .arrowIcon {
+    font-size: 12px;
+  }
+
+  /* Spinner */
+  .spinner {
+    width: 50px;
+    height: 50px;
+    border-width: 5px;
+    margin-bottom: 12px;
+  }
+
+  .text {
+    font-size: 14px;
+  }
+}

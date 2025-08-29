@@ -3,87 +3,82 @@
 .hero-section {
   display: flex;
   justify-content: space-between;
-  padding-left: 3rem; 
-  padding-right: 0rem; 
+  padding-left: 3rem;
+  padding-right: 0rem;
   height: 661px;
   position: relative;
-  max-width: 100%; 
+  max-width: 100%;
   overflow: hidden;
-  padding-top: 6.8rem; 
-  height: calc(100vh - 6.8rem)
+  padding-top: 6.8rem;
+  height: calc(100vh - 6.8rem);
 }
-
 
 .hero-content {
   padding-top: 13rem;
   width: 596px;
   margin-left: -1.5rem;
-
 }
 
 .hero-heading {
-  margin-bottom: 1.5rem; 
-  font-size: 2rem; 
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
   font-weight: bold;
   color: #000000;
   pointer-events: none;
-
 }
 
 .hero-description {
-  margin-bottom: 1.5rem; 
-  font-size: 1rem; 
-  color: #4B5563; 
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  color: #4b5563;
   pointer-events: none;
 }
 
-  .cta-button {
-    padding: 0.625rem 1rem; 
-    font-size: 0.875rem;
-    font-weight: 500; 
-    color: white;
-    background-color: #208E90; 
-    border-radius: 10px; 
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .cta-button:hover {
-    background-color: #008d89;
-  }
+.cta-button {
+  padding: 0.625rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: white;
+  background-color: #208e90;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
 
-  /* Underline style */
+.cta-button:hover {
+  background-color: #008d89;
+}
 
-  .underline-style {
+/* Underline style */
+
+.underline-style {
   position: relative;
-  color: #208E90;
+  color: #208e90;
   display: inline-block;
 }
 
 .underline-style::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
-  bottom: 0; 
+  bottom: 0;
   width: 100%;
-  height: 10px; 
-  background-image: url('/line2.png');
+  height: 10px;
+  background-image: url("/line2.png");
   background-repeat: no-repeat;
-  background-size: contain; 
+  background-size: contain;
   pointer-events: none;
 }
 
+/* HERO IMAGE */
 
-  /* HERO IMAGE */
-
-  .hero-image-wrapper {
+.hero-image-wrapper {
   position: relative;
   padding: 0;
   height: 668px;
   width: 710px;
   overflow: hidden;
-
 }
 
 .hero-image {
@@ -92,13 +87,12 @@
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;  
+  object-fit: cover;
   transition: transform 1s ease-in-out;
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
-  padding: '30px';
-
+  padding: "30px";
 }
 
 .hero-image-wrapper .hero-image:nth-child(1) {
@@ -111,37 +105,105 @@
   transform: translateX(200%);
 }
 
+.caption {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  color: #ffffff;
+  font-size: 1.2rem;
+  z-index: 2;
+}
 
+.slider {
+  display: flex;
+  gap: 0.5rem;
+  position: absolute;
+  bottom: 4px;
+  left: 1px;
+  z-index: 2;
+}
 
-  .caption {
-    position: absolute;
-    bottom: 1.5rem;
-    left: 1.5rem;
-    color: #ffffff;
-    font-size: 1.2rem;
-    z-index: 2;
+.dot {
+  width: 30px;
+  height: 6px;
+  background-color: #d9d9d980;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dot.active {
+  background-color: #208e90;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .hero-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 4rem 1.5rem;
+    height: auto; 
   }
 
-  
-   .slider {
-    display: flex;
-    gap: 0.5rem;
-    position: absolute;
-    bottom: 4px;
-    left: 1px;
-    z-index: 2;
-  }
-  
-  .dot {
-    width: 30px;
-    height: 6px;
-    background-color: #D9D9D980;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .dot.active {
-    background-color: #208E90;
+  .hero-content {
+    width: 100%;
+    margin: 0;
+    padding-top: 5rem;
   }
 
+  .hero-heading {
+    font-size: 1.8rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .cta-button {
+    font-size: 1rem;
+    padding: 0.75rem 1.25rem;
+  }
+
+  .hero-image-wrapper {
+    width: 100%;
+    height: auto;
+    margin-top: 2rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 3rem 1rem;
+    height: auto;
+    padding-top: 8rem; 
+
+  }
+
+  .hero-content {
+    padding-top: 0;
+  }
+
+  .hero-heading {
+    font-size: 1.5rem;
+    line-height: 1.4;
+  }
+
+  .hero-description {
+    max-width: 37ch;   
+    text-align: center;
+    margin: 0 auto 1.5rem;
+    font-size: 0.85rem;
+  }
+  .cta-button {
+    font-size: 0.85rem;
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+  }
+
+  .hero-image-wrapper {
+    display: none;
+  }
+}

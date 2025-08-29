@@ -2,7 +2,6 @@
   padding: 4rem 6rem;
   background-color: #f4f4f4;
   margin-top: -2rem;
-   pointer-events: none;
 }
 
 .how-swiftcare-container {
@@ -79,4 +78,94 @@
   gap: 1.25rem;
   width: 491px;
   max-width: 100%;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .how-swiftcare-section {
+    padding: 3rem 2rem;
+  }
+
+  .how-swiftcare-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .how-swiftcare-left {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .how-swiftcare-title {
+    font-size: 2rem;
+  }
+
+  .how-swiftcare-description {
+    font-size: 1rem;
+    max-width: 600px;
+    margin: 0 auto 1.5rem;
+    line-height: 1.5;
+  }
+
+  .how-swiftcare-button {
+    font-size: 1rem;
+    padding: 0.75rem 1.25rem;
+  }
+
+  .how-swiftcare-right {
+    width: 100%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .how-swiftcare-section {
+    padding: 2.5rem 1rem;
+  }
+
+  .how-swiftcare-title {
+    font-size: 1.5rem;
+    line-height: 1.3;
+  }
+
+  .how-swiftcare-description {
+    font-size: 0.85rem;
+    max-width: 37ch;  
+    text-align: center;
+    margin: 0 auto 1.25rem;
+  }
+
+  .how-swiftcare-button {
+    margin: 0 auto;
+    padding: 0.6rem 1rem;
+    display: block;
+    font-size: 0.85rem;
+  }
+   .how-swiftcare-right {
+    width: 100%;
+    padding-left: 0rem;
+    padding-right: 0.9rem;
+  }
+
+  .process-step-row {
+    display: flex;
+    flex-direction: row;   
+    align-items: center;  
+    gap: 0.5rem;
+  }
+
+    .process-step-icon {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;  
+    height: 24px;
+  }
+
+  .process-step {
+    flex: 1;   
+    padding: 0.8rem 0.8rem;                      
+  }
 }

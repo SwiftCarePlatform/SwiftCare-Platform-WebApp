@@ -1,6 +1,7 @@
 .service-card {
-  flex: 1 1 300px;
-  max-width: 360px;
+   flex: 1 1 0; 
+   min-width: 330px; 
+   max-width: 360px;
   display: flex;
   flex-direction: column;
   border: 1px solid #e5e7eb;

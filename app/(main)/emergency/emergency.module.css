@@ -1,0 +1,259 @@
+/* EmergencyHelp.module.css */
+
+.container {
+  min-height: 100vh;
+  background-color: #f7fafc;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+}
+
+/* Emergency Header */
+.emergencyHeader {
+  background-color: #DC3545;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+  margin-top: 100px;
+}
+
+.emergencyTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0 0 20px;
+  letter-spacing: -0.02em;
+}
+
+.emergencySubtitle {
+  font-size: 1.125rem;
+  font-weight: 400;
+  margin: 0;
+  opacity: 0.95;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5;
+}
+
+/* Main Content */
+.main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Danger Alert */
+.dangerAlert {
+  background-color:#FFEDEF;
+  border-left: 6px solid #DC3545;
+  border-radius: 8px;
+  padding: 40px;
+  margin: 40px 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.alertIcon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+    color: #DC3545;
+}
+
+
+.alertContent {
+  flex: 1;
+}
+
+.alertText {
+  color: #c53030;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Section Styles */
+.section {
+  padding: 40px 0 60px;
+}
+
+.sectionTitle {
+  color: #e53e3e;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 40px;
+  letter-spacing: -0.01em;
+}
+
+/* Hotlines Grid */
+.hotlinesGrid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 1fr;
+}
+
+.hotlineCard {
+  background: white;
+  border-radius: 12px;
+  padding: 28px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e2e8f0;
+  transition: all 0.2s ease;
+}
+
+.hotlineCard:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
+
+.hotlineTitle {
+  color: #2d3748;
+  font-size: 1.375rem;
+  font-weight: 600;
+  margin: 0 0 16px;
+  letter-spacing: -0.01em;
+}
+
+.phoneSection {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.callLabel {
+  color: #4a5568;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.phoneButton {
+  background-color: #e53e3e;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: 'Courier New', monospace;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.phoneButton:hover {
+  background-color: #c53030;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(229, 62, 62, 0.3);
+}
+
+.phoneButton:active {
+  transform: translateY(0);
+}
+
+.phoneButton:focus {
+  outline: 3px solid rgba(229, 62, 62, 0.3);
+  outline-offset: 2px;
+}
+
+.hotlineDescription {
+  color: #718096;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .emergencyTitle {
+    font-size: 3rem;
+  }
+  
+  .main {
+    padding: 0 40px;
+  }
+  
+  .hotlinesGrid {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+  
+  .phoneSection {
+    flex-wrap: nowrap;
+  }
+}
+
+
+
+@media (max-width: 640px) {
+  .emergencyTitle {
+    font-size: 1.5rem;
+  }
+  .emergencySubtitle{
+    font-size: 0.9rem;
+  }
+  .emergencyHeader {
+    padding: 40px 20px;
+  }
+  
+  .dangerAlert {
+    margin: 20px 0;
+    padding: 5px;
+  }
+  
+  .alertText {
+    font-size: 0.8rem;
+  }
+
+  .sectionTitle{
+    font-size: 1.1rem;
+  }
+  
+  .hotlineCard {
+    padding: 20px;
+  }
+  
+  .hotlineTitle {
+    font-size: 1rem;
+  }
+  .hotlineDescription{
+    font-size: 0.8rem;
+  }
+  .callLabel{
+    font-size: 0.8rem;
+  }
+  .phoneButton {
+    font-size: 0.9rem;
+    padding: 5px 16px;
+  }
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+  .hotlineCard,
+  .phoneButton {
+    transition: none;
+  }
+  
+  .hotlineCard:hover,
+  .phoneButton:hover {
+    transform: none;
+  }
+}
+
+
+@media (prefers-contrast: high) {
+  .dangerAlert {
+    border-width: 3px;
+  }
+  
+  .phoneButton {
+    border: 2px solid transparent;
+  }
+  
+  .phoneButton:focus {
+    border-color: white;
+  }
+} 
